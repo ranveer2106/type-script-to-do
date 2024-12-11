@@ -1,0 +1,8 @@
+.tasklist{
+    border: 2px solid black;
+}
+
+.tasks{
+    background-color: goldenrod;
+    margin: 10px;
+}
