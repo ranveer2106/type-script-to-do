@@ -12,7 +12,9 @@ interface Props{
 const TaskList:React.FC<Props> = ({taskList,setTaskList}:Props) => {
   return (
     <div className='tasklist'>
-      TaskList
+      <h1>
+        TaskList
+      </h1>
 
 
       

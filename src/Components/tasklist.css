@@ -1,8 +1,36 @@
 .tasklist{
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 2rem;
+    margin-top: 2rem;
 }
 
 .tasks{
     background-color: goldenrod;
     margin: 10px;
+}
+
+.task{
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: large;
+    outline: none;
+    border: none;
+}
+.task-outer{
+    background-color: white;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    
+}
+.task-outer button{
+    padding: 0.5rem;
+    background-color: white;
+    border: none;
+    margin: 0rem 0.5rem;
+}
+.task-outer button:hover{
+    background-color: grey;
+    cursor: pointer;
+    color: white;
 }

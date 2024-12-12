@@ -2,6 +2,8 @@ import React from 'react'
 import { FaTrash } from "react-icons/fa";
 import { TiTick } from "react-icons/ti";
 import { TaskBox } from './Taskbox'
+import { CiEdit } from "react-icons/ci";
+
 
 
 
@@ -14,15 +16,15 @@ interface Props{
 
 const Task:React.FC<Props> = ({task,completed,taskList,setTaskList}:Props) => {
   return (
-    <li>
+    <form className='task-outer'>
         {/* {task} */}
-        <input
+        <input className='task'
         //  onChange={(e)=> setTaskList(e.value)} 
         type="text" value={task} />
         <button><TiTick /></button>
         <button><FaTrash /></button>
-        <button>{completed?"yes":"no"}</button>
-    </li>
+        <button><CiEdit /></button>
+    </form>
   )
 }
 
