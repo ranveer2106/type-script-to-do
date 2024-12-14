@@ -34,3 +34,11 @@
     cursor: pointer;
     color: white;
 }
+.yes{
+    text-decoration: line-through;
+}
+
+.edit{
+    color: aqua;
+    border: 2px solid black;
+}

@@ -8,7 +8,7 @@ interface Props1{
 }
 
 const Input:React.FC<Props1> = ({task,setTask,handleAdd}:Props1) => {
-    console.log(`task : ${task}`);
+    // console.log(`task : ${task}`);
     const inputRef = useRef<HTMLInputElement>(null);
   return (
     <div>

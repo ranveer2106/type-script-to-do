@@ -21,8 +21,8 @@ export const App:React.FC = () => {
       setTask("")
     }
   };
-  console.log(`tasklist : ${taskList}`);
-  console.log(taskList);
+  // console.log(`tasklist : ${taskList}`);
+  // console.log(taskList);
   
   
 
