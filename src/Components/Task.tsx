@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useRef, useEffect} from 'react';
 import { FaTrash } from "react-icons/fa";
 import { TiTick } from "react-icons/ti";
 // import { CiEdit } from "react-icons/ci";
@@ -55,7 +55,16 @@ const Task: React.FC<Props> = ({ task, completed, id, taskList, setTaskList }) =
       }
     }
 
-    // const inputRef = useRef<>(null)
+    const inputRef = useRef<HTMLInputElement>(null)
+
+    useEffect(()=>{
+      inputRef.current?.focus();
+      
+    },[edit])
+
+    // const inputRef = useRef<>(null)]
+
+
 
     return (
         <form className='task-outer' onSubmit={(e)=>handleEdit(e,id)}>
@@ -63,6 +72,7 @@ const Task: React.FC<Props> = ({ task, completed, id, taskList, setTaskList }) =
             edit&&!completed? (
 
               <input
+                  ref={inputRef}
                   className={`task ${edit?"edit":" "}`}
                   type="text"
                   value={value}
